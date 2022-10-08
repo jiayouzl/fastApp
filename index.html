@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="zh-CN" class="h-100">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>快切App(fastApp)</title>
+    <link rel="stylesheet" href="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/css/bootstrap.min.css">
+    <script src="https://cdn.staticfile.org/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://cdn.staticfile.org/popper.js/2.11.2/umd/popper.min.js"></script>
+    <script src="https://cdn.staticfile.org/twitter-bootstrap/5.1.3/js/bootstrap.min.js"></script>
+    <link rel="icon" href="./image/favicon.ico">
+    <style>
+        /*
+        * Globals
+        */
+
+
+        /* Custom default button */
+        .btn-secondary,
+        .btn-secondary:hover,
+        .btn-secondary:focus {
+            color: #333;
+            text-shadow: none;
+            /* Prevent inheritance from `body` */
+        }
+
+
+        /*
+        * Base structure
+        */
+
+        body {
+            text-shadow: 0 .05rem .1rem rgba(0, 0, 0, .5);
+            box-shadow: inset 0 0 5rem rgba(0, 0, 0, .5);
+        }
+
+        .cover-container {
+            max-width: 50em;
+        }
+
+
+        /*
+        * Header
+        */
+
+        .nav-masthead .nav-link {
+            padding: .25rem 0;
+            font-weight: 700;
+            color: rgba(255, 255, 255, .5);
+            background-color: transparent;
+            border-bottom: .25rem solid transparent;
+        }
+
+        .nav-masthead .nav-link:hover,
+        .nav-masthead .nav-link:focus {
+            border-bottom-color: rgba(255, 255, 255, .25);
+        }
+
+        .nav-masthead .nav-link+.nav-link {
+            margin-left: 1rem;
+        }
+
+        .nav-masthead .active {
+            color: #fff;
+            border-bottom-color: #fff;
+        }
+    </style>
+</head>
+
+<body class="d-flex h-100 text-center text-white bg-dark">
+
+    <div class="cover-container d-flex w-100 h-100 p-3 mx-auto flex-column">
+        <header class="mb-auto">
+            <div>
+                <h3 class="float-md-start mb-0">快切App🚀</h3>
+                <nav class="nav nav-masthead justify-content-center float-md-end">
+                    <a class="nav-link active" aria-current="page" href="./index.html">Home</a>
+                    <a class="nav-link" target="_blank" href="mailto:jiayouzl@2980.com">Email</a>
+                </nav>
+            </div>
+        </header>
+
+        <main class="px-3" style="margin-top:50px;">
+            <h3>快速在各个App中使用自定义快捷键进行切换</h3>
+            <p class="lead">程序开发中使用macOS自带Tab键切换经常会碰到应用排序乱的问题，导致切换应用效率很低，也没找到很好的解决办法，突发奇想有了你现在所见到的这款应用，相信TA能成为你的好帮手！</p>
+            <p class="lead text-success">所需开启的权限</p>
+            <p class="lead">系统偏好设置→安全性与隐私→隐私→输入监听→右侧+号→将本App添加即可</p>
+            <p class="lead">Preview</p>
+            <p><img src="./image/iShot_2022-10-08_20.23.36.png" alt="界面预览" width="100%" height="100%"></p>
+            <p class="lead">Download</p>
+            <p class="lead">
+                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Inter</a>
+                <a href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Apple Silicon</a>
+            </p>
+        </main>
+
+        <footer class="mt-auto text-white-50">
+            <p>© 2022-2022 <a href="https://jiayouzl.github.io/fastApp/" class="text-white">GitHub</a>, by <a href="https://github.com/jiayouzl/" class="text-white">@jiayouzl</a>.</p>
+        </footer>
+    </div>
+
+</body>
+
+</html>
