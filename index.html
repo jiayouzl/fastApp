@@ -102,8 +102,8 @@
                 <div class="col">
                     <p class="lead">Now Download<img src="https://img.shields.io/github/release/jiayouzl/fastApp/all.svg" alt="APP Version" style="margin-left:10px;"></p>
                     <p class="lead">
-                        <a href="https://github.com/jiayouzl/fastApp/releases/download/v1.0.0/fastApp.app-x64.7z" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Inter</a>
-                        <a href="https://github.com/jiayouzl/fastApp/releases/download/v1.0.0/fastApp.app-arm64.7z" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Apple Silicon</a>
+                        <a id="url_1" href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Inter</a>
+                        <a id="url_2" href="#" class="btn btn-lg btn-secondary fw-bold border-white bg-white">Apple Silicon</a>
                     </p>
                 </div>
 
@@ -118,3 +118,19 @@
 </body>
 
 </html>
+<script type="text/javascript">
+    $(document).ready(function () {
+        $.ajax({
+            url: 'https://api.github.com/repos/jiayouzl/fastApp/releases/latest',
+            type: 'GET',
+            dataType: 'json',
+            success: function (data) {
+                var version = data.tag_name;
+                // var url_1 = data.assets[0].browser_download_url;
+                // console.log(version);
+                $('#url_1').attr('href', 'https://github.com/jiayouzl/fastApp/releases/download/' + version + '/fastApp.app-x64.7z');
+                $('#url_2').attr('href', 'https://github.com/jiayouzl/fastApp/releases/download/' + version + '/fastApp.app-arm64.7z');
+            }
+        });
+    });
+</script>
