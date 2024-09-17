@@ -126,8 +126,8 @@
             dataType: 'html',
             success: function (data) {
                 //正则取出版本号
-                const regex = /v\d+\.\d+\.\d+/i;
-                const version = data.match(regex)[0];
+                const regex = //v(\d+\.\d+\.\d+)/gi;
+                const version = data.match(regex)[1];
                 // console.log(version);
                 $('#url_1').attr('href', 'https://github.com/jiayouzl/fastApp/releases/download/' + version + '/fastApp.app-x64.7z');
                 $('#url_2').attr('href', 'https://github.com/jiayouzl/fastApp/releases/download/' + version + '/fastApp.app-arm64.7z');
